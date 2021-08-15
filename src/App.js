@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { ThemeProvider } from '@material-ui/core/styles'
 
-function App() {
+import { theme } from './themes/'
+
+import './App.css'
+// import { Router } from 'react-router';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
+import Navbar from './components/Layout/Navbar'
+import Footer from './components/Layout/Footer'
+
+import NotFound from './pages/NotFound/'
+import Home from './pages/Home/'
+import CriticalProduct from './pages/CriticalProduct'
+import TransportProduct from './pages/TransportProduct'
+
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <ThemeProvider theme={theme}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/criticalproduct" component={CriticalProduct} />
+          <Route exact path="/transportproduct" component={TransportProduct} />
+          <Route component={NotFound}></Route>
+        </Switch>
+      </ThemeProvider>
+    </Router>
+  )
 }
-
-export default App;

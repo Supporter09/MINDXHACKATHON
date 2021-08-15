@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +9,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'PoppinsVN-200';
+  src: local('PoppinsVN-200'), url(./fonts/PoppinsVN/PoppinsVN-200.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsVN-400';
+  src: local('PoppinsVN-400'), url(./fonts/PoppinsVN/PoppinsVN-400.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsVN-500';
+  src: local('PoppinsVN-500'), url(./fonts/PoppinsVN/PoppinsVN-500.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsVN-600';
+  src: local('PoppinsVN-600'), url(./fonts/PoppinsVN/PoppinsVN-600.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsVN-700';
+  src: local('PoppinsVN-700'), url(./fonts/PoppinsVN/PoppinsVN-700.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsVN-800';
+  src: local('PoppinsVN-800'), url(./fonts/PoppinsVN/PoppinsVN-800.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsVN-900';
+  src: local('PoppinsVN-900'), url(./fonts/PoppinsVN/PoppinsVN-900.ttf) format('truetype');
+}
+
